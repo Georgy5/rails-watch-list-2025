@@ -59,6 +59,8 @@ group :development do
 end
 
 group :test do
+  # Use the RSpec testing framework
   gem "rspec-rails"
+  # This gem brings back Rails 5 'assigns' as well as 'assert_template' to controller and integration tests.
   gem "rails-controller-testing"
 end
