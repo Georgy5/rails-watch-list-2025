@@ -1,6 +1,14 @@
-Lists Index view
-<ul>
-  <% @lists.each do |list| %>
-    <li><%= list.name %></li>
-  <% end %>
-</ul>
+
+<div class="container">
+  <h1>Lists Index view</h1>
+
+  <ul>
+    <% @lists.each do |list| %>
+      <li><%= list.name %></li>
+    <% end %>
+  </ul>
+
+  <hr>
+
+  <%= link_to "New List", new_list_path, class: "btn btn-primary" %>
+</div>
